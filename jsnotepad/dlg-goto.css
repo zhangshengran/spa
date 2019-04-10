@@ -1,0 +1,74 @@
+body,p{
+    margin: 0;
+    padding: 0;
+}
+.notepad-dlg-goto{
+   
+    /* background-color: #f1f1f1; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6d6a6a9f;
+    z-index: 10;
+    border: 1px;
+  
+    display: none;
+    /* transition: height 0.25s ease-in; */
+}
+.dialogbox{
+    /* margin: auto; */
+    margin: 200px auto;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    height: 160px;
+    width: 293px;
+    border: 1px solid;
+    box-shadow: 0 1px 3px 0;
+    background-color: #f1f1f1;
+}
+.titlebar{
+    background-color: white;    
+    padding:  0 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.close-btn{
+   line-height: 30px;
+}
+.close-btn:hover{
+    color: #6d6a6a9f
+}
+.button{
+    text-align: right;
+    margin-bottom: 16px;
+}
+.main p{
+    padding:  10px 0;
+    margin: 0 0 0  14px;
+}
+.txt-line-num{
+    display: block;
+    height: 29px;
+    width: 265px;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+input[type="button"]{
+  width: 86px;
+  height: 28px;
+  line-height: 28px;
+  margin-right: 14px;
+}
