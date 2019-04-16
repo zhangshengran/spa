@@ -18,13 +18,7 @@ body,p{
     /* transition: height 0.25s ease-in; */
 }
 .dialogbox{
-    /* margin: auto; */
     margin: 200px auto;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
     height: 160px;
     width: 293px;
     border: 1px solid;

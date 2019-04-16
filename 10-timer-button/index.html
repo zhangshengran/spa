@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #btn{
+        display: block;
+        padding: 15px 30px;
+        margin: 50px auto;
+    }
+    </style>
+</head>
+<body>
+    <button id="btn" ></button>
+</body>
+<script>
+    let btn =document.querySelector('#btn');
+    btn.addEventListener('click',()=>{
+        alert('OK')
+    })
+    window.onload = function(){
+        btn.setAttribute('disabled','true')
+        let time = 9;
+        btn.innerText = `同意${time}秒`
+      var timer =  setInterval(()=>{
+            btn.innerText = `同意${time-1}秒`
+            time--;
+        },1000)
+        setTimeout(()=>{
+            clearInterval(timer);
+            btn.innerText = `同意`
+            btn.removeAttribute('disabled')
+        },9000)
+    }
+</script>
+</html>

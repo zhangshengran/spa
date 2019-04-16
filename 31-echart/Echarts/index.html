@@ -14,6 +14,12 @@
         var myChart = echarts.init(document.getElementById('main'));
 
         // 指定图表的配置项和数据
+        function H(p){
+            // H(p) = -p*log(p)-(1-p)log(1-p)
+            return -1*(p*Math.log(p) / Math.log(2))-(1-p)*(Math.log(1-p) / Math.log(2));
+        }
+
+        
         var option = {
             title: {
                 text: '二进制熵函数曲线'
@@ -23,18 +29,19 @@
                 data:['信息量']
             },
             xAxis: {
-                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+                data: ["0","0.1","0.2","0.3","0.4","0.5",'0.6,','0.7','0.8','0.9','1.0']
             },
             yAxis: {},
             series: [{
-                name: '销量',
+                name: '',
                 type: 'bar',
-                data: [5, 20, 36, 10, 10, 20]
+                data: [0, 0.2, 0.4, 0.6,0.8, 1.0]
             }]
         };
 
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
+        
     </script>
 </body>
 </html>

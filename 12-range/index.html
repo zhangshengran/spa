@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <span>年龄</span>
+    <input type="range"  name="" value="">
+    <h2></h2>
+</body>
+<script>
+    let range =document.querySelector("input[type='range']");
+    let message = document.querySelector('h2');
+    message.innerText = `你的年龄为0岁`;
+    range.value = 0;
+    range.onclick = function(){
+        message.innerText = `你的年龄为${range.value}岁`
+    }
+</script>
+</html>
